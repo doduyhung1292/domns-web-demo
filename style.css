@@ -4,6 +4,7 @@ body {
    background-repeat: no-repeat;
    background-position: center;
    background-attachment: scroll;
+   object-fit: cover;
 }
 .container {
 	display: flex;
@@ -41,9 +42,10 @@ ul li {
 	position: fixed;
 	left:0.6em;
 	top: 0em;
-	font-size: 4em;
+	font-size: 4.5em;
 	margin: 0px;
-	color: #71a70c;
+	color: #ca9442;
+	font-family: 'Pacifico', cursive;
 }
 .login {
 	color: #441c04;
@@ -57,6 +59,7 @@ ul li {
 .losepw {
   color: #633920;
   text-decoration: none;
+  transition: 4s;
 }
 .losepw:hover {
    color: #23150d;
@@ -67,12 +70,14 @@ ul li {
 } 
 .menu-domns {
 	writing-mode: vertical-rl;
+	font-size: 1em;
 	position: absolute;
 	display: none;
 	padding: 0;
 	position: fixed;
 	top: 6em;
 	left: 0.6em;
+	transition: 2s;
 }
 .menu-bar:hover .menu-domns{
 	display: block;
@@ -83,3 +88,93 @@ ul li {
 
 
 
+.box-welcome {
+	position: fixed;
+	left: 30%;
+	top: 30%;
+	padding: 3em;
+	background-color: rgba(2, 2, 2, 0.4);
+    padding: 4em;
+    color: rgba(205, 206, 167, 0.7);
+    font-size: 1.5em;
+	border: 0.6px solid; 
+	transition: 3s;
+}
+.box-welcome:hover {
+    background-color: rgba(2, 2, 2, 0.7);
+    transform: rotate(10deg);
+}
+
+@keyframes example {
+	0% {
+		background-color: rgba(0, 0, 0, 0.2);
+		right: 43.5em;
+	    top: 7.1em;
+	}
+	20% {
+		background-color: rgba(60, 60, 60, 0.3);
+		right: 12.9em;
+	    top: 7.1em;
+	}
+	30% {
+		background-color: rgba(120, 120, 120, 0.33);
+		right: 34em;
+		top: 27em;
+	   }
+	 40% {
+		background-color: rgba(120, 120, 120, 0.36);
+		right: 76em;
+		top: 23em;
+	   }
+    50% {
+		background-color: rgba(120, 120, 120, 0.4);
+		right: 12.9em;
+		top: 25.1em;
+	   }
+	55% {
+		background-color: rgba(120, 120, 120, 0.4);
+		right: 78em;
+		top: 25.1em;
+		}   
+	60% {
+		background-color: rgba(0, 0, 0, 0.43);
+		right: 23em;
+	    top: 7.1em;
+	   }
+	70% {
+		background-color: rgba(0, 0, 0, 0.46);
+		right: 39em;
+	    top: 29em;
+	    }   
+    80% {
+		background-color: rgba(180, 180, 180, 0.6);
+		right: 45.8em;
+		top: 28em;
+	    }
+	100% {
+		background-color: rgba(255, 255, 255, 0.7);
+		right: 43.5em;
+		top: 7.1em;
+	}
+}
+.animation {
+	position: relative;
+	width: 4em;
+	height: 4em;
+	background-color: rgba(0, 0, 0, 0.3);
+	animation-name: example;
+	animation-duration: 10s; 
+	right: 43.5em;
+	top: 7.1em;
+	border-radius: 4em;
+	 animation-iteration-count: infinite;
+}
+}
+.animation {
+	position: relative;
+	background-color: black;
+	width: 4em;
+	height: 4em;
+	right: 43.5em;
+	top: 7.1em;
+}

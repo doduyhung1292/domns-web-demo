@@ -1,0 +1,85 @@
+body {
+   font-family: Arial, san-serif;
+   background-image: url('./desktop-1985856_1920.jpg');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: scroll;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+    flex-basis: 0.9em;
+    align-items: flex-end;
+}
+.menu-login input {
+	border-radius: 5em;
+	height: 2em;
+	width: 14em;
+	margin-bottom: 0.3em;
+    margin-left: 5em;
+}
+.menu-login {
+	border: 1px solid #AAA;
+	padding-right: 3em;
+	padding-top: 1em;
+	padding-bottom: 2em;
+	background-color: rgba(0, 0,0 ,0.1);
+}
+
+ul li {
+	list-style-type: none;
+	float: left;
+	padding: 0.7em;
+	background-color: rgba(0, 0, 0, 0.2);
+	border: 1px solid #AAA;
+	border-radius: 1em;
+	font-size: 1em;
+	margin-left: 3em; 
+	margin-bottom: 2em;
+}
+.Domns {
+	position: fixed;
+	left:0.6em;
+	top: 0em;
+	font-size: 4em;
+	margin: 0px;
+	color: #71a70c;
+}
+.login {
+	color: #441c04;
+	 font-size: 1em
+}
+.login input {
+	height: 2em;
+	width: 10em;
+    border-radius: 3em;
+}
+.losepw {
+  color: #633920;
+  text-decoration: none;
+}
+.losepw:hover {
+   color: #23150d;
+   font-size: 150%;
+	background-color: #e8cdcd;
+	height: 200%;
+	width: 130%
+} 
+.menu-domns {
+	writing-mode: vertical-rl;
+	position: absolute;
+	display: none;
+	padding: 0;
+	position: fixed;
+	top: 6em;
+	left: 0.6em;
+}
+.menu-bar:hover .menu-domns{
+	display: block;
+}
+.menu-domns li:hover {
+	background-color: rgba(247, 240, 247, 0.1);
+}
+
+
+
